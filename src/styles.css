@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+}
+
+p,
+a,
+li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.btn{
+    padding: 15px 40px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.btn.primary{
+    background-color: black;
+}
+
+.btn.secondary{
+    background-color: #f95b3d;
+}
+
+.btn.tertiary{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+section{
+    margin: 100px auto;
+    display: block;
+    max-width: 1400px;
+}
+
+::selection{
+    background-color: #f95b3d;
+}

@@ -1,0 +1,42 @@
+<section id="work">
+
+    <h2>{{ title }}</h2>
+
+    <div class="filter-nav">
+        <ul>
+            <li><a href="#" class="link">All</a></li>
+            <li><a href="#" class="link">Freelance</a></li>
+            <li><a href="#" class="link">Limegreentangerine</a></li>
+            <li><a href="#" class="link">Assured Futures Ltd</a></li>
+        </ul>
+    </div>
+
+    <div class="work-block">
+
+        <div class="container">
+        
+            <div class="row">
+
+                <div class="col-4" *ngFor="let element of array">
+                    
+                    <a href="{{ element.link }}" class="link" target="_blank">
+                        <div class="project-block">
+                            <div class="image-block">
+                                <img src="{{ element.imagePath }}" alt="{{ element.title }}"/>
+                            </div>
+                            <div class="project-content">
+                                <h3>{{ element.title }}</h3>
+                                <p>{{ element.languages }}</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+
+</section>

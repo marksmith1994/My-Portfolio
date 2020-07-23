@@ -1,0 +1,18 @@
+<section id="about">
+
+    <h2>{{ title }}</h2>
+
+    <div class="info-container {{ element.reverse }}" *ngFor="let element of array; let odd = odd;" [ngClass]="{ 'reverse': odd}">
+        <div class="image-container">
+            <img alt="{{ element.title }}" src="{{ element.imagePath }}" />
+        </div>
+        <div class="content-container">
+            <div class="content-inner">
+                <h3>{{ element.title }}</h3>
+                <p>{{ element.description }}</p>
+                <a href="{{ element.link }}" target="_blank" class="btn primary" [ngClass]="{ 'tertiary': odd} ">View</a>
+            </div>
+        </div>
+    </div>
+
+</section>
